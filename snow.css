@@ -1,7 +1,7 @@
 .contenedor{
     width: 700px;
     height: 550px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 .box1{
     background-color: #A4A3FF;
@@ -12,12 +12,21 @@
 
 }
 .boxFooter{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 45%;
 }
-a{
+.boxFooter h4{
+    text-align: center;
+}
+.box1 a{
+    font-weight: bolder;
+}
+.box2 a{
     color: #3da4ab;
     font-weight: bolder;
+}
+.box1-terminos a{
+    color: white;
 }
 input{
     margin: 5px 0;
@@ -47,11 +56,29 @@ h2{
 .repara p{
     font-style: italic;
 }
-/* .none{
+.none{
     display: none;
-} */
+}
 .carUbic{
     width: 40%;
     background-color: #A4A3FF;
     border: 2px solid black;
+}
+.custocareLogo{
+    width: 75px;
+    height: 100px;
+}
+.box1-terminos{
+    border: 2px solid black;
+    width: 70%;
+    padding: 20px;
+    background-color: #A4A3FF;
+    color: white;
+}
+.clausulaUno h6{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.cuerpo-terminos{
+    background-color: #b1b493;
 }
