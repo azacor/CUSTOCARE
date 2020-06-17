@@ -25,13 +25,16 @@ h2{
     text-align: center;
     margin: 10px 0;
 }
-li{
+.listaEncuentra li{
     margin: 10px 0;
     list-style: url(https://icon-icons.com/icons2/317/PNG/32/map-marker-icon_34392.png);
 }
-.lista-chatea{
+.listaChatea li{
     margin: 10px 0;
     list-style: none;
+}
+.listaFooter li{
+    list-style: url(https://icon-icons.com/icons2/1132/PNG/32/1486348525-music-forward-front-next-arrow_80457.png);
 }
 .chatea{
     width: 225px;
