@@ -11,6 +11,10 @@
     color: #A4A3FF;
 
 }
+.boxFooter{
+    border: 1px solid black;
+    width: 45%;
+}
 a{
     color: #3da4ab;
     font-weight: bolder;
@@ -40,7 +44,7 @@ h2{
     width: 225px;
     height: 375px;
 }
-p{
+.repara p{
     font-style: italic;
 }
 /* .none{
@@ -49,5 +53,5 @@ p{
 .carUbic{
     width: 40%;
     background-color: #A4A3FF;
-    border: none;
+    border: 2px solid black;
 }
