@@ -11,37 +11,55 @@
 
         <div class="contenedor box1">
             <h2>Ponte en contacto: Repara tu equipo médico con nosotros.</h2>
-                <div class="repara d-flex flex-column align-items-center" id="reparar">
+                <div class="repara d-flex flex-column align-items-center">
                     <div>
-                        <input type="text" id="nom" size="50" maxlength="50" placeholder="Nombre Completo" required>
+                        <input type="text" id="nomRepara" size="50" maxlength="50" placeholder="Nombre Completo" required>
                         <br>
                     </div>
                     <div>
-                        <input type="text" id="tel" size="50" maxlength="50" placeholder="Teléfono" required>
+                        <input type="text" id="telRepara" size="50" maxlength="50" placeholder="Teléfono" required>
                         <br>
                     </div>
                     <div>
-                        <input type="text" id="correo" size="50" maxlength="50" placeholder="Correo Electrónico" required>
+                        <input type="text" id="correoRepara" size="50" maxlength="50" placeholder="Correo Electrónico" required>
                         <br>
                     </div>
                     <div>
-                        <input type="text" id="equipo" size="50" maxlength="100" placeholder="¿Cuál es el equipo que deseas reparar?" required>
+                        <input type="text" id="equipoRepara" size="50" maxlength="100" placeholder="¿Cuál es el equipo que deseas reparar?" required>
                         <br>
                     </div>
                     <div>
-                        <textarea id="descripcion" cols="52" rows="6" placeholder="Breve descripción del problema." maxlength="500" required></textarea>
+                        <textarea id="descripcionRepara" cols="52" rows="6" placeholder="Breve descripción del problema." maxlength="500" required></textarea>
                         <br>
                     </div>
                     <div>
-                        <button id="boton">Enviar</button>
-                    </div>
-                    <div>
-                        <br>
-                        <p>
-                            *Recibirás una cotización o un correo con un formulario para que nos des más detalles
-                        </p>
+                        <button id="botonRepara">Enviar</button>
                     </div>
                 </div>
+        </div>
+
+        <div class="contenedor box1 none" id="repara">
+            <div class="d-flex flex-column align-items-center">
+                <div class="verificar">
+                    <p>
+                        Tus datos fueron recibidos!
+                    </p>
+                </div>
+                <div class="card repara carRepara" id="cardRepara">
+                    <div class="card-body">
+                        <p id="respuestaNombreRepara"></p>
+                        <p id="respuestaTelefonoRepara"></p>
+                        <p id="respuestaCorreoRepara"></p>
+                        <p id="respuestaEquipoRepara"></p>
+                        <p id="respuestaDescripcionRepara"></p>
+                    </div>
+                </div>
+                <div class="verificar">
+                    <p>
+                        *Recibirás una cotización o un formulario en tu correo para que nos des más detalles o agendar una reunión en un plazo no mayor a 24 horas.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div class="contenedor box2">
@@ -98,15 +116,25 @@
                     <div class="card-body">
                         <input type="text" id="ubic" size="30" maxlength="30" placeholder="¿En qué ciudad te encuentras?">
                         <br>
-                        <button id="botUbic">Enviar</button>
+                        <button id="botonUbic" onclick="">Conocer</button>
                     </div>
                   </div>
-                <div class="card none carUbic">
+                <div class="card none carUbic" id="cardUbicacion">
                     <div class="card-body">
-                        <p>Puedes encontrarnos en:</p>
+                        <!-- <p>Puedes encontrarnos en:</p> -->
                         <p id="respUbic"></p>
                     </div>
                   </div>
+            </div>
+            <div class="d-flex justify-content-around align-items-center">
+                <img src="https://www.caye.mx/sites/default/files/delegaciones-ciudad-de-mexico.png" alt="CDMX" class="none mapaCiudad" id="cdmx">
+                <img src="https://www.vivirguadalajara.com/wp-content/uploads/2011/05/Mapa_ZMG1024.png" alt="GDL" class="none mapaCiudad" id="gdl"> 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Queretaro_localidades.svg" alt="QRO" class="none mapaCiudad" id="qro">
+                <img src="" alt="MTY" class="none mapaCiudad" id="mty">
+                <img src="" alt="CHI" class="none mapaCiudad" id="chi">
+                <img src="" alt="VER" class="none mapaCiudad" id="ver">
+                <img src="" alt="CAN" class="none mapaCiudad" id="can">
+                <img src="" alt="VILL" class="none mapaCiudad" id="vill">
             </div>
         </div>
 
@@ -148,6 +176,7 @@
 
 
 
+        <!-- JS! en el documento -->
         <script src="snow.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

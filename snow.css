@@ -3,6 +3,10 @@
     height: 550px;
     /* border: 3px solid black; */
 }
+.verificar{
+    width: 90%;
+    /* border: 2px solid black; */
+}
 .box1{
     background-color: #A4A3FF;
     color: white;
@@ -62,7 +66,17 @@ h2{
 .carUbic{
     width: 40%;
     background-color: #A4A3FF;
-    border: 2px solid black;
+    border: hidden;
+}
+.carRepara{
+    width: 40%;
+    background-color: #A4A3FF;
+    border: 2px dashed black;
+    margin: 15px 0;
+}
+.mapaCiudad{
+    width: 175px;
+    height: 225px;
 }
 .custocareLogo{
     width: 75px;
