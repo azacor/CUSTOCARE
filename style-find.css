@@ -1,29 +1,7 @@
 
+body{
 
-
-
-
-
-
-
-
-.my-container{
-    width: 700px;
-    height: 500px;
-    margin-top: 150px;
-
-}
-
-
-h1{
-
-margin-left: 25%;
-
-
-}
-
-
-.my-row{
+    background-color: #A4A3FF;
 
 
 
@@ -31,3 +9,32 @@ margin-left: 25%;
 }
 
 
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .card{
+    margin-top: 30px;
+  }
+
+
+
+  h2{
+    color: white;
+    font-weight: bolder;
+    margin-top: 20%;
+    
+    }
+    
+
+.my-btn{
+
+background-color: #8c3fff;
+color:white;
+border-radius: 20px;
+
+    
+}
