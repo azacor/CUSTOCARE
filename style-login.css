@@ -10,6 +10,9 @@
     padding: 8% 0 0;
     margin: auto;
 }
+
+
+
 .form {
     position: relative;
     z-index: 1;
@@ -60,12 +63,11 @@
 .form .register-form {
     display: none;
 }
-.container {
+.my-container {
     position: relative;
     z-index: 1;
-    max-width: 300px;
+    max-width: 500px;
     margin: 0 auto;
-    padding-top: 10%;
 }
 .container:before, .container:after {
     content: "";
@@ -104,7 +106,6 @@ body {
 h2{
 color: white;
 font-weight: bolder;
-
-
-
+padding-right: 100px;
 }
+
