@@ -1,7 +1,9 @@
 .contenedor{
-    width: 700px;
     height: 550px;
-    /* border: 3px solid black; */
+    border: 3px solid black;
+}
+.verificar{
+    width: 90%;
 }
 .box1{
     background-color: #A4A3FF;
@@ -9,10 +11,8 @@
 }
 .box2{
     color: #A4A3FF;
-
 }
 .boxFooter{
-    /* border: 1px solid black; */
     width: 45%;
 }
 .boxFooter h4{
@@ -60,9 +60,18 @@ h2{
     display: none;
 }
 .carUbic{
+    background-color: #A4A3FF;
+    border: hidden;
+}
+.carRepara{
     width: 40%;
     background-color: #A4A3FF;
-    border: 2px solid black;
+    border: 2px dashed black;
+    margin: 15px 0;
+}
+.mapaCiudad{
+    width: 175px;
+    height: 225px;
 }
 .custocareLogo{
     width: 75px;
