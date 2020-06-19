@@ -1,17 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+body{
+
+    font-family: 'Raleway', sans-serif;
 
 
-
-
+}
 
 
 .header {
-    background: url(images/VECTOR_02.png) no-repeat;
+    background: url(images/CUSTOCARE_01.png), url(images/VECTOR_02.png);
+    
+    background-repeat: no-repeat, no-repeat;
+
     background-color: #A4A3FF;
-    background-size: 100%;
-    background-position: bottom;
+    background-size: 40%, 100%;
+    background-position: bottom right, bottom;
     min-height: 100vh;
 
   }
+
+
 
 .header .navbar {
     background-color: transparent !important;
@@ -22,8 +30,20 @@ h1{
 
     padding-top: 30px;
     color: white;
+    text-shadow: 5px 5px 3px rgba(128, 128, 128, 0.226);
 }
 
+.my-btn{
+
+font-weight: bold;
+width: 40vh;
+height: 8vh;
+font-size: 25px;
+box-shadow: 5px 5px 3px rgba(128, 128, 128, 0.226);
+
+
+
+}
 
 .my-container{
     width: 700px;
@@ -32,11 +52,12 @@ h1{
 }
 
 .my-container .btn {
-
-    width: 50vh;
+    width: 70vh;
     height: 8vh;
     font-size: 25px;
     border-radius: 30px;
+
+
     
 }
 
@@ -56,16 +77,26 @@ h1{
 
 .my-col{
 
-    background-color:white;
-width: 300px;
-height: 350px;
+background-color:white;
+width: 20%;
+height: 20%;
 border-radius: 35px;
+box-shadow: 5px 5px 3px rgba(128, 128, 128, 0.226);
+
+}
+
+.my-img{
+
+size: 2%;
 
 
 
 }
 
+
 .btn{
     border-radius: 30px;
+    box-shadow: 5px 5px 3px rgba(128, 128, 128, 0.226);
+
 
 }

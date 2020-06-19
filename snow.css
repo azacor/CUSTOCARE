@@ -1,42 +1,63 @@
+
+
+
 .contenedor{
     height: 550px;
-    border: 3px solid black;
 }
 .verificar{
     width: 90%;
 }
 .box1{
     background-color: #A4A3FF;
-    color: white;
+    height: 600px;
+
 }
 .box2{
-    color: #A4A3FF;
+    color: black;
+    height: 600px;
+    
 }
 .boxFooter{
     width: 45%;
+
 }
 .boxFooter h4{
     text-align: center;
 }
 .box1 a{
-    font-weight: bolder;
+    color: white;
 }
 .box2 a{
     color: #3da4ab;
-    font-weight: bolder;
+
 }
 .box1-terminos a{
     color: white;
 }
 input{
     margin: 5px 0;
+    width: 100%;
+    border-radius: 15px;
+    border:none;
+    box-shadow: 5px 5px 3px rgba(128, 128, 128, 0.226);
+    padding-left: 10px;
+
 }
 textarea{
     margin: 5px 0;
+    width: 100%;
+    border-radius: 15px;
+    border:none;
+    box-shadow: 5px 5px 3px rgba(128, 128, 128, 0.226);
+    padding-left: 10px;
+
+    
 }
 h2{
     text-align: center;
     margin: 10px 0;
+    text-shadow: 5px 5px 3px rgba(128, 128, 128, 0.226);
+    
 }
 .listaEncuentra li{
     margin: 10px 0;
@@ -54,7 +75,7 @@ h2{
     height: 375px;
 }
 .repara p{
-    font-style: italic;
+    font-style: sans-serif;
 }
 .none{
     display: none;
@@ -63,8 +84,21 @@ h2{
     background-color: #A4A3FF;
     border: hidden;
 }
+
+.form-control{
+
+width: 30vw;
+border-radius: 20px;
+
+
+}
+
+
+
+
 .carRepara{
     width: 40%;
+    text-align: center;
     background-color: #A4A3FF;
     border: 2px dashed black;
     margin: 15px 0;
@@ -78,7 +112,7 @@ h2{
     height: 100px;
 }
 .box1-terminos{
-    border: 2px solid black;
+    border: 2px;
     width: 70%;
     padding: 20px;
     background-color: #A4A3FF;
@@ -90,4 +124,12 @@ h2{
 }
 .cuerpo-terminos{
     background-color: #b1b493;
+}
+
+.my-footer{
+height: 20%;
+
+
+
+
 }

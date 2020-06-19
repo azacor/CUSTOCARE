@@ -10,7 +10,7 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="snow.css">
 
     <title>CustoCare</title>
 
@@ -22,34 +22,37 @@
     <!-- Navbar con logo y CUSTOCARE -->
     <header class="header md-12 lg-12 ">
       <nav class="navbar navbar-dark">
-       <div class="d-flex mx-3"> <img src="images/custocare_logo.png" width= "100"> <h1>CUSTOCARE</h1> </div>
-       <!-- Navbar con login / hazte cuidador -->
+        <div class="d-flex mx-3"> <img src="images/custocare_logo.png" width="100">
+          <h1>CUSTOCARE</h1>
+        </div>
+        <!-- Navbar con login / hazte cuidador -->
         <form class="form-inline py-4 justify-content-end"">
-          <a href="haztecuidador.html" target="_parent"> <button class="btn btn-light mx-3" type="button">Hazte Cuidador</button> </a>
-          <a href="login.html" target="_parent">  <button class="btn btn-light mx-3" type="button">Crear cuenta/ingreso </button> </a>
+          <a href=" haztecuidador.html" target="_parent"> <button class="btn btn-light mx-3" type="button">Hazte
+            Cuidador</button> </a>
+          <a href="login.html" target="_parent"> <button class="btn btn-light mx-3" type="button">Crear cuenta/ingreso
+            </button> </a>
         </form>
       </nav>
-      
 
 
-<!-- Botón para encontrar cuidador -->
-      <div class="container-fluid my-container">
-        <div class="row py-5 mx-5 text-center my-row d-flex">
-          <div class="col-4">
-            <a href="questionary.html" target="_parent"><button type="submit" class="btn bg-light mx-5"> Encontrar Cuidadores </div> </a>
-          </div>
+      <!-- Botón para encontrar cuidador -->
+      <div class="container-fluid py-5">
+        <div class="row py-5">
+          <div class="col d-flex justify-content-center py-5 ">
+            <a href="questionary.html" target="_parent"><button type="submit" class="btn bg-light mx-5 btn-lg my-btn"> Encontrar Cuidadores </div> </a>
         </div>
+      </div>
 
     </header>
 
 
  <!-- tienda online    -->
 <div class="container-fluid my-cnt">
-  <div class="d-flex justify-content-center py-3"><h2>Aquí puedes rentar o comprar equipo médico</h2></div>
+  <div class="d-flex justify-content-center py-5"><h2>Aquí puedes rentar o comprar equipo médico</h2></div>
     <div class="row justify-content-around py-5">
-      <div class="col-4 my-col">
-        
-       <div class="d-flex justify-content-center mx-4"><img src="images/renta_01.png" width= "300"> </div>
+      <div class="col-8 col-md-6 col-lg-4 my-col">
+       <div class="d-flex justify-content-center mx-4"> 
+          <a href="ayesha.html"> <img src="images/renta_01.png" width= "250"></a> </div> 
        <div class="d-flex justify-content-center py-2"><h2>TIENDA ONLINE</h2></div>
       </div>
     </div>
@@ -58,16 +61,219 @@
 
 <!-- repara tu equipo medico -->
 
-<div class="container-fluid my-cnt-01">
-  <div class="d-flex justify-content-center py-5"><h2>Aquí puedes reparar tu equipo</h2></div>
-    <div class="row justify-content-around py-5">
-      <div class="col-4 my-col">
-        
 
+<div class="contenedor box1 container-fluid">
+  <div class="row justify-content-center">
+      <div class="col-12 py-5">
+          <h2><a name="reparaEquipoMedico">Ponte en contacto: Repara tu equipo médico con nosotros.</a></h2>
       </div>
-    </div>
+      <div class="reparaEquipoMedico">
+          <div class="col-12">
+              <div>
+                  <input type="text" id="nomRepara" class="form-group-sm" size="50" maxlength="50" placeholder="Nombre Completo" required>
+                  <br>
+              </div>
+          </div>
+          <div class="col-12">
+              <div>
+                  <input type="text" id="telRepara" class="form-group-sm" size="50" maxlength="50" placeholder="Teléfono" required>
+                  <br>
+              </div>
+          </div>
+          <div class="col-12">
+              <div>
+                  <input type="text" id="correoRepara"class="form-group-sm" size="50" maxlength="50" placeholder="Correo Electrónico" required>
+                  <br>
+              </div>
+          </div>
+          <div class="col-12">
+              <div>
+                  <input type="text" class="form-group-sm" id="equipoRepara" size="50" maxlength="100" placeholder="¿Cuál es el equipo que deseas reparar?" required>
+                  <br>
+              </div>
+          </div>
+          <div class="col-12">
+              <div>
+                  <textarea id="descripcionRepara" cols="49" class="form-group-sm" rows="6" placeholder="Breve descripción del problema." maxlength="500" required></textarea>
+                  <br>
+              </div>
+          </div>
+          <div class="col-12">
+              <div>
+                  <button id="botonRepara" class="btn bg-light btn-sm">Enviar</button>
+              </div>
+          </div>
+      </div>
   </div>
 </div>
+
+<div class="contenedor box1 none container-fluid" id="repara">
+  <div class="row justify-content-center">
+      <div class="col-12 verificar">
+          <p>
+              Tus datos fueron recibidos!
+          </p>
+      </div>
+      <div class="col-12">
+          <div class="card repara carRepara" id="cardRepara">
+              <div class="card-body">
+                  <p id="respuestaNombreRepara"></p>
+                  <p id="respuestaTelefonoRepara"></p>
+                  <p id="respuestaCorreoRepara"></p>
+                  <p id="respuestaEquipoRepara"></p>
+                  <p id="respuestaDescripcionRepara"></p>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 verificar">
+          <p>
+              *Recibirás una cotización o un formulario en tu correo para que nos des más detalles o agendar una reunión en un plazo no mayor a 24 horas.
+          </p>
+      </div>
+  </div>
+</div>
+
+
+<!-- Chatea con nosotros -->
+
+<div class="contenedor box2 container-fluid">
+  <div class="row justify-content-center">
+      <div class="col-12 py-3">
+          <h2>¿Tienes dudas? ¡Chatea con nosotros!</h2>
+      </div>
+      <div class="col-6 d-flex align-items-center justify-content-center">
+          <div>
+              <ul class="listaChatea">
+                  <li>
+                      <img src="https://icon-icons.com/icons2/1582/PNG/32/whatsapp_108042.png" alt="WhatsApp"> Escríbenos por <a href="https://api.whatsapp.com/send?phone=5212281772846&text=Quiero%20m%C3%A1s%20informaci%C3%B3n!%20:)" target="_blank">WhatsApp</a>!
+                  </li>
+                  <li>
+                      <address>
+                          <img src="https://icon-icons.com/icons2/272/PNG/32/Gmail_29991.png" alt="Mail"> Escríbenos un <a href="mailto:nieves9427@gmail.com">correo</a>!
+                      </address>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="col-6 d-flex align-items-center justify-content-center py-5">
+          <div>
+              <img src="images/chat.png" alt="Chatea" class="chatea">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="contenedor box1 container-fluid">
+  <div class="row justify-content-center py-3">
+      <div class="col-12 ">
+          <h2>¡Encuéntranos en tu ciudad!</h2>
+      </div>
+      <div class="col-3">
+          <div>
+              <ul class="listaEncuentra">
+                  <li>CDMX</li>
+                  <li>Guadalajara</li>
+              </ul>
+          </div>
+      </div>
+      <div class="col-3">
+          <div>
+              <ul class="listaEncuentra">
+                  <li>Monterrey</li>
+                  <li>Chihuahua</li>
+              </ul>
+          </div>
+      </div>
+      <div class="col-3">
+          <div>
+              <ul class="listaEncuentra">
+                  <li>Querétaro</li>
+                  <li>Veracruz</li>
+              </ul>
+          </div>
+      </div>
+      <div class="col-3">
+          <div>
+
+          </div>
+      </div>
+      <div class="col-6">
+          <div class="card carUbic">
+              <div class="card-body">
+                  <input type="text" class="form-control" id="ubic" size="30" maxlength="30" placeholder="¿En qué ciudad te encuentras?">
+                  <br>
+                  <button id="botonUbic" class="btn bg-light btn-sm" onclick="encuentraUbic();">Conocer</button>
+              </div>
+            </div>
+      </div>
+      <div class="col-6">
+          <div class="card none carUbic" id="cardUbicacion">
+              <div class="card-body">
+                  <h5>Puedes encontrarnos en:</h5>
+                  <p id="respUbic"></p>
+              </div>
+          </div>
+      </div>
+      <div class="col-12">
+          <div class="d-flex justify-content-around align-items-center">
+              <img src="https://www.caye.mx/sites/default/files/delegaciones-ciudad-de-mexico.png" alt="CDMX" class="none mapaCiudad" id="cdmx">
+              <img src="https://www.vivirguadalajara.com/wp-content/uploads/2011/05/Mapa_ZMG1024.png" alt="GDL" class="none mapaCiudad" id="gdl"> 
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Queretaro_localidades.svg" alt="QRO" class="none mapaCiudad" id="qro">
+              <img src="https://www.mty.itesm.mx/egap/centros/cedem/imagenes/mapabaseAMM.jpg" alt="MTY" class="none mapaCiudad" id="mty">
+              <img src="https://imagenestotales.com/wp-content/uploads/2020/04/eb179babaf8a9bdaef20a1776fca2d27.jpg" alt="CHI" class="none mapaCiudad" id="chi">
+              <img src="https://i.pinimg.com/originals/95/28/f5/9528f5a2f8c8eb8cf650da5a2dd020f8.jpg" alt="VER" class="none mapaCiudad" id="ver">
+              <img src="https://i.pinimg.com/originals/99/ea/20/99ea209eeecd2d80f6d630c213047424.jpg" alt="CAN" class="none mapaCiudad" id="can">
+              <img src="https://i.pinimg.com/originals/f7/0b/d8/f70bd862c437db69306a3854425f1e77.jpg" alt="VILL" class="none mapaCiudad" id="vill">
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="contenedor box2 container-fluid my-footer">
+  <div class="row justify-content-center py-3 ">
+      <div class="boxFooter col-12">
+          <h4>Nuestros Servicios</h4>
+      </div>
+      <div class="col-6">
+          <ul class="listaFooter">
+              <li>
+                <a href="login.html"> Crear cuenta/Ingresar.</a>
+              </li>
+              <li>
+                <a href="haztecuidador.html"> Hazte/Entrar como Cuidador.</a>
+              </li>
+              <li>
+                <a href="ayesha.html"> Quiero comprar/rentar equipo médico.</a> 
+              </li>
+              <li>
+                  <a href="#reparaEquipoMedico">Quiero reparar mi equipo médico.</a>
+              </li>
+          </ul>
+      </div>
+      <div class="col-6">
+          <div class="boxFooter">
+              <h4>Acerca de...</h4>
+                  <ul class="listaFooter">
+                      <li>
+                          <a href="terminos.html" target="_blank">Términos</a>
+                      </li>
+                      <li>
+                          <a href="privacidad.html" target="_blank">Privacidad</a>
+                      </li>
+                      <li>
+                          <a href="condiciones.html" target="_blank">Condiciones Custocare</a>
+                      </li>
+                  </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!-- JS! en el documento -->
+<script src="snow.js"></script>
 
 
 

@@ -1,7 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 .h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #A4A3FF;
     text-decoration: none;
 }
