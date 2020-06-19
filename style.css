@@ -40,6 +40,31 @@ h1{
     
 }
 
+
+.my-cnt{
+
+    min-height: 80vh;
+    background-color: #EBF0FF;
+}
+
+.my-cnt-01{
+
+    min-height: 80vh;
+    background-color: white;
+}
+
+
+.my-col{
+
+    background-color:white;
+width: 300px;
+height: 350px;
+border-radius: 35px;
+
+
+
+}
+
 .btn{
     border-radius: 30px;
 
