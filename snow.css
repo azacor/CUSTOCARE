@@ -1,11 +1,9 @@
 .contenedor{
-    width: 700px;
     height: 550px;
-    /* border: 3px solid black; */
+    border: 3px solid black;
 }
 .verificar{
     width: 90%;
-    /* border: 2px solid black; */
 }
 .box1{
     background-color: #A4A3FF;
@@ -13,10 +11,8 @@
 }
 .box2{
     color: #A4A3FF;
-
 }
 .boxFooter{
-    /* border: 1px solid black; */
     width: 45%;
 }
 .boxFooter h4{
@@ -64,7 +60,6 @@ h2{
     display: none;
 }
 .carUbic{
-    width: 40%;
     background-color: #A4A3FF;
     border: hidden;
 }
