@@ -1,0 +1,46 @@
+
+
+
+
+
+
+.header {
+    background: url(images/VECTOR_02.png) no-repeat;
+    background-color: #A4A3FF;
+    background-size: 100%;
+    background-position: bottom;
+    min-height: 100vh;
+
+  }
+
+.header .navbar {
+    background-color: transparent !important;
+
+  }
+
+h1{
+
+    padding-top: 30px;
+    color: white;
+}
+
+
+.my-container{
+    width: 700px;
+    height: 500px;
+    margin-top: 200px;
+}
+
+.my-container .btn {
+
+    width: 50vh;
+    height: 8vh;
+    font-size: 25px;
+    border-radius: 30px;
+    
+}
+
+.btn{
+    border-radius: 30px;
+
+}
