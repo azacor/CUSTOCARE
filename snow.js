@@ -22,31 +22,103 @@
         let ubicacionMin = preguntaUbicacion.toLowerCase()
 
         if (ubicacionMin === 'cdmx' || ubicacionMin === 'ciudad de mexico'){
-            respUbic.innerHTML = 'Puedes encontrarnos en: Benito Juárez, Venustiano Carranza, Coyoacán, Iztapalapa, Miguel Hidalgo y Azcapotzalco.'
-            cdmx.classList.remove('none')
+            respUbic.innerHTML = 'Benito Juárez, Venustiano Carranza, Coyoacán, Iztapalapa, Miguel Hidalgo y Azcapotzalco.'
+            // cdmx.classList.remove('none')
+            document.getElementById('cdmx').style.display='block'
+            document.getElementById('gdl').style.display='none'
+            document.getElementById('qro').style.display='none'
+            document.getElementById('mty').style.display='none'
+            document.getElementById('chi').style.display='none'
+            document.getElementById('ver').style.display='none'
+            document.getElementById('can').style.display='none'
+            document.getElementById('vill').style.display='none'
         }else if (ubicacionMin === 'guadalajara'){
-            respUbic.innerHTML = 'Puedes encontrarnos en: Guadalajara Ciudad, Tlajomulco, Zapopan y Tlaquepaque.'
-            gdl.classList.remove('none')
+            respUbic.innerHTML = 'Guadalajara Ciudad, Tlajomulco, Zapopan y Tlaquepaque.'
+            // gdl.classList.remove('none')
+            document.getElementById('gdl').style.display='block'
+            document.getElementById('cdmx').style.display='none'
+            document.getElementById('qro').style.display='none'
+            document.getElementById('mty').style.display='none'
+            document.getElementById('chi').style.display='none'
+            document.getElementById('ver').style.display='none'
+            document.getElementById('can').style.display='none'
+            document.getElementById('vill').style.display='none'
         }else if (ubicacionMin === 'queretaro'){
-            respUbic.innerHTML = 'Puedes encontrarnos en: Santiago de Querétaro, El Marqués, Jurica y Juriquilla.'
-            qro.classList.remove('none')
+            respUbic.innerHTML = 'Santiago de Querétaro, El Marqués, Jurica y Juriquilla.'
+            // qro.classList.remove('none')
+            document.getElementById('qro').style.display='block'
+            document.getElementById('gdl').style.display='none'
+            document.getElementById('cdmx').style.display='none'
+            document.getElementById('mty').style.display='none'
+            document.getElementById('chi').style.display='none'
+            document.getElementById('ver').style.display='none'
+            document.getElementById('can').style.display='none'
+            document.getElementById('vill').style.display='none'
         }else if (ubicacionMin === 'monterrey'){
-            respUbic.innerHTML = 'Puedes encontrarnos en: Monterrey Ciudad, San Pedro, San Nicolás, Escobedo, Santa Catarina y Apodaca'
-            mty.classList.remove('none')
+            respUbic.innerHTML = 'Monterrey Ciudad, San Pedro, San Nicolás, Escobedo, Santa Catarina y Apodaca'
+            // mty.classList.remove('none')
+            document.getElementById('mty').style.display='block'
+            document.getElementById('gdl').style.display='none'
+            document.getElementById('qro').style.display='none'
+            document.getElementById('cdmx').style.display='none'
+            document.getElementById('chi').style.display='none'
+            document.getElementById('ver').style.display='none'
+            document.getElementById('can').style.display='none'
+            document.getElementById('vill').style.display='none'
         }else if (ubicacionMin === 'chihuahua'){
-            respUbic.innerHTML = 'Puedes encontrarnos en: Chihuahua Ciudad, Ciudad Juárez, Creel y Delicias'
-            chi.classList.remove('none')
-        }else if (ubicacionMin === 'Veracruz'){
-            respUbic.innerHTML = 'Puedes encontrarnos en: Veracruz Puerto, Xalapa, Córdoba, Orizaba y Coatzacoalcos'
-            ver.classList.remove('none')
+            respUbic.innerHTML = 'Chihuahua Ciudad, Ciudad Juárez, Creel y Delicias'
+            // chi.classList.remove('none')
+            document.getElementById('chi').style.display='block'
+            document.getElementById('gdl').style.display='none'
+            document.getElementById('qro').style.display='none'
+            document.getElementById('mty').style.display='none'
+            document.getElementById('cdmx').style.display='none'
+            document.getElementById('ver').style.display='none'
+            document.getElementById('can').style.display='none'
+            document.getElementById('vill').style.display='none'
+        }else if (ubicacionMin === 'veracruz'){
+            respUbic.innerHTML = 'Veracruz Puerto, Xalapa, Córdoba, Orizaba y Coatzacoalcos'
+            // ver.classList.remove('none')
+            document.getElementById('ver').style.display='block'
+            document.getElementById('gdl').style.display='none'
+            document.getElementById('qro').style.display='none'
+            document.getElementById('mty').style.display='none'
+            document.getElementById('chi').style.display='none'
+            document.getElementById('cdmx').style.display='none'
+            document.getElementById('can').style.display='none'
+            document.getElementById('vill').style.display='none'
         }else if (ubicacionMin === 'cancun'){
-            respUbic.innerHTML = 'Puedes encontrarnos en: Zona Hotelera de Cancún y Cancún Ciudad'
-            can.classList.remove('none')
+            respUbic.innerHTML = 'Zona Hotelera de Cancún y Zona Urbana de Cancún'
+            // can.classList.remove('none')
+            document.getElementById('can').style.display='block'
+            document.getElementById('gdl').style.display='none'
+            document.getElementById('qro').style.display='none'
+            document.getElementById('mty').style.display='none'
+            document.getElementById('chi').style.display='none'
+            document.getElementById('ver').style.display='none'
+            document.getElementById('cdmx').style.display='none'
+            document.getElementById('vill').style.display='none'
         }else if (ubicacionMin === 'villahermosa'){
-            respUbic.innerHTML = 'Puedes encontrarnos en: Villahermosa Ciudad y Cárdenas'
-            vill.classList.remove('none')
+            respUbic.innerHTML = 'Villahermosa Ciudad y Cárdenas'
+            // vill.classList.remove('none')
+            document.getElementById('vill').style.display='block'
+            document.getElementById('gdl').style.display='none'
+            document.getElementById('qro').style.display='none'
+            document.getElementById('mty').style.display='none'
+            document.getElementById('chi').style.display='none'
+            document.getElementById('ver').style.display='none'
+            document.getElementById('can').style.display='none'
+            document.getElementById('cdmx').style.display='none'
         }else{
             respUbic.innerHTML = 'Verifica los datos ingresados'
+            document.getElementById('vill').style.display='none'
+            document.getElementById('gdl').style.display='none'
+            document.getElementById('qro').style.display='none'
+            document.getElementById('mty').style.display='none'
+            document.getElementById('chi').style.display='none'
+            document.getElementById('ver').style.display='none'
+            document.getElementById('can').style.display='none'
+            document.getElementById('cdmx').style.display='none'
         }
 
         cardUbicacion.classList.remove('none')
